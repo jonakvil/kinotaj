@@ -1802,7 +1802,7 @@ html {
 }
 
 .bg-hero {
-  background-image: url('/assets/images/bg.png');
+  background-image: url('./assets/images/bg.png');
 }
 
 .from-primary {
@@ -2460,7 +2460,7 @@ html {
 
   font-style: normal;
 
-  src: url('/assets/fonts/Prompt-Bold.ttf');
+  src: url('./assets/fonts/Prompt-Bold.ttf');
 }
 
 @font-face {
@@ -2470,7 +2470,7 @@ html {
 
   font-style: normal;
 
-  src: url('/assets/fonts/Prompt-Regular.ttf');
+  src: url('./assets/fonts/Prompt-Regular.ttf');
 }
 
 .swiper {
