@@ -3,3 +3,46 @@
 @import 'tailwindcss/components';
 
 @import 'tailwindcss/utilities';
+
+@font-face {
+  font-family: MyPrompt;
+  font-weight: bold;
+  font-style: normal;
+  src: url('/assets/fonts/Prompt-Bold.ttf');
+}
+
+@font-face {
+  font-family: MyPrompt;
+  font-weight: normal;
+  font-style: normal;
+  src: url('/assets/fonts/Prompt-Regular.ttf');
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper .swiper-slide {
+  height: auto;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.swiper-button-next,
+.swiper-button-prev,
+.swiper-container-rtl .swiper-button-prev,
+.swiper-container-rtl .swiper-button-next {
+  color: white !important;
+}

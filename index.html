@@ -6,19 +6,142 @@
     <title>Kinotaj</title>
     <link rel="icon" href="favicon.ico" type="image/x-icon" />
     <link href="/assets/output.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
   </head>
-  <body class="bg-hero bg-cover">
-    <h1 class="text-red-500">What the actual fuck?</h1>
-
-    <!-- <iframe
-      style="border-radius: 12px"
-      src="https://open.spotify.com/embed/artist/1ZJpP7xLyb1RFJtZ8w3BQV?utm_source=generator"
-      width="100%"
-      height="352"
-      frameborder="0"
-      allowfullscreen=""
-      allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-      loading="lazy"
-    ></iframe> -->
+  <body class="font-prompt text-gray-200">
+    <div class="bg-hero bg-cover bg-no-repeat">
+      <header>
+        <nav class="w-full flex justify-end px-26 py-18 gap-26">
+          <a
+            href="#concerts"
+            class="text-2xl font-bold border-transparent hover:border-gray-200 border-b-4 py-2 mx-4 transition-all"
+            >Koncerty</a
+          >
+          <a
+            href="#gallery"
+            class="text-2xl font-bold border-transparent hover:border-gray-200 border-b-4 py-2 mx-4 transition-all"
+            >Galerie</a
+          >
+          <a
+            href="#contact"
+            class="text-2xl font-bold border-transparent hover:border-gray-200 border-b-4 py-2 mx-4 transition-all"
+            >Kontakt</a
+          >
+        </nav>
+      </header>
+      <section class="px-16 mt-80 pb-80" id="concerts">
+        <h1 class="text-hero font-bold">Kinotaj</h1>
+        <div class="flex flex-row w-full justify-between mt-64">
+          <ul class="text-3xl font-bold flex-2 flex flex-col gap-4 my-auto">
+            <a class="border-transparent hover:border-gray-200 border-b-4 transition-all" href=""
+              >13.9.2023 - Schokoladen, Berlin</a
+            >
+            <a class="border-transparent hover:border-gray-200 border-b-4 transition-all" href=""
+              >12.12.2023 - Cigistock, Pod Lampou, Plzeň</a
+            >
+          </ul>
+          <div class="w-2/5">
+            <iframe
+              style="border-radius: 12px"
+              src="https://open.spotify.com/embed/artist/1ZJpP7xLyb1RFJtZ8w3BQV?utm_source=generator"
+              width="100%"
+              height="152"
+              frameborder="0"
+              allowfullscreen=""
+              allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+              loading="lazy"
+            ></iframe>
+          </div>
+        </div>
+      </section>
+    </div>
+    <div class="bg-gradient-to-b from-primary to-secondary">
+      <section class="h-96" id="gallery">
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="/assets/photos/andel_music_bar.jpg" /></div>
+            <div class="swiper-slide"><img src="/assets/photos/divadlo_pod_lampou.jpg" /></div>
+            <div class="swiper-slide"><img src="/assets/photos/mirek.jpg" /></div>
+            <div class="swiper-slide"><img src="/assets/photos/ze_zkusebny.jpg" /></div>
+            <div class="swiper-slide"><img src="/assets/photos/zkusebna.jpg" /></div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
+      </section>
+      <section class="mt-40 max-w-4xl m-auto" id="contact">
+        <p class="text-xl text-justify">
+          Kinotaj je plzeňská kapela, která se v dnešní podobě schází od léta 2022. Originálními texty a melodiemi se
+          může pyšnit srdce kapely, jímž jsou kytarový mág – Vilda Jonák a klávesista s vesmírnými zvuky syntezátorů –
+          Míra Vanc. Tento pevný tvůrčí základ doprovází Vojta „Dickies“ Davídek na basu, Vojta Gaier za bicími a Ali
+          Vancová, která se ujala zpěvu. Jejich tvorbu lze popsat jako kombinaci upbeatových i downbeatových
+          imaginativních písní, které se snaží vyvolávat v posluchačí obrazy, nebo ho rovnou uvrhnou do zenového
+          rozpoložení a rozjímání nad skleničkou červeného. Nad všemi zvuky, které z kapely vychází, je vždy diskutováno
+          a přemýšleno na zkouškách Kinotaje a proto, ač to tak někdy při koncertech nevypadá, všechno, co se na stage
+          odehrává, má svůj důvod.
+        </p>
+        <div class="flex flex-row justify-between mt-30">
+          <a href="">
+            <img
+              class="hover:rotate-360 transition-all duration-500"
+              src="/assets/images/spotify.svg"
+              alt="spotify"
+              class="w-8 h-8"
+            />
+          </a>
+          <a href="">
+            <img
+              class="hover:rotate-360 transition-all duration-500"
+              src="/assets/images/youtube.svg"
+              alt="youtube"
+              class="w-8 h-8"
+            />
+          </a>
+          <a href="">
+            <img
+              class="hover:rotate-360 transition-all duration-500"
+              src="/assets/images/apple.svg"
+              alt="apple"
+              class="w-8 h-8"
+            />
+          </a>
+          <a href="">
+            <img
+              class="hover:rotate-360 transition-all duration-500"
+              src="/assets/images/facebook.svg"
+              alt="facebook"
+              class="w-8 h-8"
+            />
+          </a>
+          <a href="">
+            <img
+              class="hover:rotate-360 transition-all duration-500"
+              src="/assets/images/instagram.svg"
+              alt="instagram"
+              class="w-8 h-8"
+            />
+          </a>
+        </div>
+        <p class="mt-30 text-xl w-full flex justify-center pb-11 gap-2 font-bold">
+          <span> For booking and merch: </span>
+          <a
+            class="border-transparent hover:border-gray-200 border-b-4 transition-all"
+            href="mailto:vilda.jonak@seznam.lol"
+            >vilda.jonak@seznam.lol</a
+          >
+        </p>
+      </section>
+    </div>
+    <!-- Swiper -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper('.mySwiper', {
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+        slidesPerView: 3,
+      });
+    </script>
   </body>
 </html>
