@@ -7,32 +7,33 @@
     <link rel="icon" href="favicon.ico" type="image/x-icon" />
     <link href="./assets/output.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body class="font-prompt text-gray-200">
     <div class="bg-hero bg-cover bg-no-repeat">
       <header>
-        <nav class="w-full flex justify-end px-26 py-18 gap-26">
+        <nav class="w-full flex justify-evenly pt-4 md:justify-end sm:px-26 sm:py-18 md:gap-26">
           <a
             href="#concerts"
-            class="text-2xl font-bold border-transparent hover:border-gray-200 border-b-4 py-2 mx-4 transition-all"
+            class="text-md sm:text-lg md:text-2xl font-bold border-transparent hover:border-gray-200 border-b-4 py-2 mx-4 transition-all"
             >Koncerty</a
           >
           <a
             href="#gallery"
-            class="text-2xl font-bold border-transparent hover:border-gray-200 border-b-4 py-2 mx-4 transition-all"
+            class="text-md sm:text-lg md:text-2xl font-bold border-transparent hover:border-gray-200 border-b-4 py-2 mx-4 transition-all"
             >Galerie</a
           >
           <a
             href="#contact"
-            class="text-2xl font-bold border-transparent hover:border-gray-200 border-b-4 py-2 mx-4 transition-all"
+            class="text-md sm:text-lg md:text-2xl font-bold border-transparent hover:border-gray-200 border-b-4 py-2 mx-4 transition-all"
             >Kontakt</a
           >
         </nav>
       </header>
-      <section class="px-16 mt-80 pb-80" id="concerts">
-        <h1 class="text-hero font-bold">Kinotaj</h1>
-        <div class="flex flex-row w-full justify-between mt-64">
-          <ul class="text-3xl font-bold flex-2 flex flex-col gap-4 my-auto">
+      <section class="px-4 md:px-16 mt-110 sm:mt-80 pb-80" id="concerts">
+        <h1 data-aos="fade-up" class="text-6xl md:text-hero font-bold">Kinotaj</h1>
+        <div data-aos="fade-up" class="flex flex-col gap-8 md:flex-row w-full justify-between mt-64">
+          <ul class="text-lg md:text-3xl font-bold flex-2 flex flex-col gap-4 my-auto">
             <a class="border-transparent hover:border-gray-200 border-b-4 transition-all" href=""
               >13.9.2023 - Schokoladen, Berlin</a
             >
@@ -40,7 +41,7 @@
               >12.12.2023 - Cigistock, Pod Lampou, Plzeň</a
             >
           </ul>
-          <div class="w-2/5">
+          <div class="w-full md:w-2/5">
             <iframe
               style="border-radius: 12px"
               src="https://open.spotify.com/embed/artist/1ZJpP7xLyb1RFJtZ8w3BQV?utm_source=generator"
@@ -69,8 +70,8 @@
           <div class="swiper-button-prev"></div>
         </div>
       </section>
-      <section class="mt-40 max-w-4xl m-auto" id="contact">
-        <p class="text-xl text-justify">
+      <section class="px-4 mt-40 max-w-4xl m-auto" id="contact">
+        <p data-aos="fade-up" class="text-lg md:text-xl text-left md:text-justify">
           Kinotaj je plzeňská kapela, která se v dnešní podobě schází od léta 2022. Originálními texty a melodiemi se
           může pyšnit srdce kapely, jímž jsou kytarový mág – Vilda Jonák a klávesista s vesmírnými zvuky syntezátorů –
           Míra Vanc. Tento pevný tvůrčí základ doprovází Vojta „Dickies“ Davídek na basu, Vojta Gaier za bicími a Ali
@@ -80,49 +81,44 @@
           a přemýšleno na zkouškách Kinotaje a proto, ač to tak někdy při koncertech nevypadá, všechno, co se na stage
           odehrává, má svůj důvod.
         </p>
-        <div class="flex flex-row justify-between mt-30">
+        <div data-aos="fade-up" class="flex flex-row justify-between mt-30">
           <a href="">
             <img
-              class="hover:rotate-360 transition-all duration-500"
+              class="hover:rotate-360 transition-all duration-500 h-10 md:h-12"
               src="./assets/images/spotify.svg"
               alt="spotify"
-              class="w-8 h-8"
             />
           </a>
           <a href="">
             <img
-              class="hover:rotate-360 transition-all duration-500"
+              class="hover:rotate-360 transition-all duration-500 h-10 md:h-12"
               src="./assets/images/youtube.svg"
               alt="youtube"
-              class="w-8 h-8"
             />
           </a>
           <a href="">
             <img
-              class="hover:rotate-360 transition-all duration-500"
+              class="hover:rotate-360 transition-all duration-500 h-10 md:h-12"
               src="./assets/images/apple.svg"
               alt="apple"
-              class="w-8 h-8"
             />
           </a>
           <a href="">
             <img
-              class="hover:rotate-360 transition-all duration-500"
+              class="hover:rotate-360 transition-all duration-500 h-10 md:h-12"
               src="./assets/images/facebook.svg"
               alt="facebook"
-              class="w-8 h-8"
             />
           </a>
           <a href="">
             <img
-              class="hover:rotate-360 transition-all duration-500"
+              class="hover:rotate-360 transition-all duration-500 h-10 md:h-12"
               src="./assets/images/instagram.svg"
               alt="instagram"
-              class="w-8 h-8"
             />
           </a>
         </div>
-        <p class="mt-30 text-xl w-full flex justify-center pb-11 gap-2 font-bold">
+        <p class="mt-30 text-xl w-full flex flex-col md:flex-row justify-center pb-11 gap-2 font-bold text-center">
           <span> For booking and merch: </span>
           <a
             class="border-transparent hover:border-gray-200 border-b-4 transition-all"
@@ -132,6 +128,11 @@
         </p>
       </section>
     </div>
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
     <!-- Swiper -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script>
@@ -140,7 +141,15 @@
           nextEl: '.swiper-button-next',
           prevEl: '.swiper-button-prev',
         },
-        slidesPerView: 3,
+        slidesPerView: 1,
+        breakpoints: {
+          640: {
+            slidesPerView: 2,
+          },
+          1024: {
+            slidesPerView: 3,
+          },
+        },
       });
     </script>
   </body>

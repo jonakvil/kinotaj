@@ -18,6 +18,7 @@ module.exports = {
         '22': '5.5rem',
         '26': '6.5rem',
         '30': '7.5rem',
+        '110': '27.5rem',
       },
       fontSize: {
         'hero': '150px',
